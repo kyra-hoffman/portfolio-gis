@@ -67,18 +67,19 @@ body {
 
 .resume-container {
   display: flex;
-  gap: 34px 16px;
+  gap: 2rem;
   flex-wrap: wrap;
+  justify-content: space-between
 }
 
     /* Resume Cards */
 
     .resume-card {
-      flex: 1
-      min-width: 250px;
-      display: flex;
-      flex-direction: row;
-      gap: 34px;
+      border: px
+      padding: 1rem
+      border-radius: 1rem;
+      text-align: center;
+      max-width: 300px
     }
 
     .resume-card-text-container {
