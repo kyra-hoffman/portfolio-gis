@@ -78,7 +78,7 @@ body {
 
 #my-resume-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -93,12 +93,12 @@ body {
     .resume-card {
       max-width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 34px;
     }
 
     .resume-card-text-container {
-      flex-direction: row;
+      flex-direction: column;
       display: flex;
       gap: 16px
     }
