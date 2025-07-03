@@ -13,7 +13,10 @@
 }
 
 .resume-icon {
-  width: 50px
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 1.5rem;
 }
 
 a.icon-link {

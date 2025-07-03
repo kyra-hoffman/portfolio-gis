@@ -21,10 +21,10 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin: 250px 425px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 20px;
 }
 
 
@@ -53,7 +53,7 @@ body {
 #portfolio-header-text-container {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 16px;
   flex-basis: 50%;
 }
 
@@ -67,15 +67,20 @@ body {
 
 .resume-container {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-between
 }
 
     /* Resume Cards */
 
+    .resume-row {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
     .resume-card {
-      border: px
+      border: 2px;
       padding: 1rem
       border-radius: 1rem;
       text-align: center;
@@ -93,6 +98,18 @@ body {
       height: 200px;
       object-fit: cover;
       object-position: left;
+    }
+
+    .resume-text {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .resume-label {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
     }
 
 
