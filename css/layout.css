@@ -74,23 +74,18 @@ body {
 
     /* Resume Cards */
 
+    .resume-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
     .resume-row {
       display: flex;
       align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      width: 300px
       margin-bottom: 2rem;
-    }
-    .resume-card {
-      border: 2px;
-      padding: 1rem
-      border-radius: 1rem;
-      text-align: center;
-      max-width: 300px
-    }
-
-    .resume-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
     }
 
     .resume-image {
@@ -104,6 +99,8 @@ body {
       font-size: 1.25rem;
       font-weight: 500;
       margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
     }
 
     .resume-label {
