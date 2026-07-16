@@ -13,9 +13,9 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/1311.png" />
+    <link rel="icon" href="./assets/images/profile.png" />
 		<title>Kyra Hoffman's Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="description" content="The GIS Portfolio of Kyra Hoffman">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -50,9 +50,9 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
+          <img src="./assets/images/profile.png" class="portfolio-header-image">
           <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
+            <span class="image-caption"></span>
           </a>
         </div>
 
@@ -66,7 +66,7 @@
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hey, I'm Kyra Hoffman</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <div class="body-text">I'm an environmental studies and GIS student.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my portfolio</span> 
@@ -75,37 +75,42 @@
         </div>
       </div>
 
-      <!-- RESUME/CV SECTION -->
-      <div id="my-resume-section">
-        <span class="subheader-text">Resume/CV</span>
+<!-- RESUME/CV SECTION -->
+<section id="resume-cv" class="section">
+  <h2 class="section-title">Resume/CV</h2>
 
-        <div class="resume-container">
-          <div class="resume-card">
-            <img src="./assets/icons/resume.svg" class="project-image">
-            <div class="resume-card-text-container">
-              <div class="subheader-text project-title">Resume</div>
-            </div>
-            <a class="button" href="./assets/docs/resume.pdf">
-              <span class="button-text">Download</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="resume-card">
-            <img src="./assets/icons/resume.svg" class="resume-image">
-            <div class="resume-card-text-container">
-              <div class="subheader-text project-title">CV</div>
-            </div>
-            <a class="button" href="./assets/docs/cv.pdf">
-              <span class="button-text">Download</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
+  <div class="resume-grid">
+    <div class="resume-row">
+      <!-- Resume -->
+      <img src="./assets/icons/resume.svg" alt="Resume Icon" class="resume-icon" />
+      <div class="resume-text">
+        <div class="resume-label">Resume</div>
+        <a class="button" href="./assets/docs/resume.pdf">
+                <span class="button-text">Download</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
       </div>
+    </div>
+  
+
+    <div class="resume-row">
+      <!-- CV -->
+      <img src="./assets/icons/cv.svg" alt="CV Icon" class="resume-icon" />
+      <div class="resume-text">
+        <div class="resume-label">Curriculum Vitae</div>
+        <a class="button" href="./assets/docs/cv.pdf">
+                <span class="button-text">Download</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work</span>
+        <h2 class="section-title">My Work</h2>
 
         <div class="projects-container">
           <!-- 
@@ -129,36 +134,68 @@
                 - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
-          <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Vassar College Sustainability Map</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+          --><div class="project-card">
+              <img src="./assets/images/sustainabilitymap.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Sustainability Map</div>
+                <div class="body-text project-card-text">The sustainability map for Vassar College acts as a point of interaction for many campus stakeholders with the Office of Sustainability. The map is an important hub of information that prospective and current students can learn about renewable energy and waste reduction.</div>
+              </div>
+              <a class="button" href="./project-pages/sustainability-map.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+                <div class="project-card">
+              <img src="./assets/images/beaversuitability.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Thesis Model</div>
+                <div class="body-text project-card-text">For my environmental studies thesis, I explored the relationship beavers had to water quality in small urban streams and if this environment was suitable for them.</div>
+              </div>
+              <a class="button" href="./project-pages/thesis-model.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+                <div class="project-card">
+              <img src="./assets/images/oldgrowthforest.tiff" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Old Growth Forest Proposal</div>
+                <div class="body-text project-card-text">The Preserve at Vassar is in the process of establishing a designated section of forest to be protected as future old growth forest.</div>
+              </div>
+              <a class="button" href="./project-pages/old-growth-forest.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <div class="project-card">
+              <img src="./assets/images/agu2025poster_compressed.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Nitrate Removal Upscale Model</div>
+                <div class="body-text project-card-text">I built on my thesis research in the summer after graduating. As part of this research I have developed a model.</div>
+              </div>
+              <a class="button" href="./project-pages/nitrate-removal.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+                <div class="project-card">
+              <img src="./assets/images/landuse.jpg" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Land Use and New York State</div>
+                <div class="body-text project-card-text">As part of my final project for Cartography: Data Visualization with GIS, I explored the relationship between agricultural/urban land use and environmental factors across New York State.</div>
+              </div>
+              <a class="button" href="./project-pages/land-use.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+          <div class="project-card">
+            <img src="./assets/images/neversinkmodel.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Neversink Reservoir Model</div>
+              <div class="body-text project-card-text">New York City has a system of 19 reservoirs to provide drinking water to its citizens. As part of a research project investigating the impact of the reservoir construction on the local communities, I developed a 3D model of one area and the buildings that were standing before it was submerged under water.</div>
+            </div>
+            <a class="button" href="./project-pages/neversink-model.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -169,28 +206,7 @@
 
     <!-- FOOTER -->
     <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="mailto:kyra.l.hoffman@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>

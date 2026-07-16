@@ -21,10 +21,10 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 225px 425px;
+  margin: 250px 425px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 20px;
 }
 
 
@@ -53,63 +53,61 @@ body {
 #portfolio-header-text-container {
   display: flex;
   flex-direction: column;
-  gap: 34px;
-  flex-basis: 50%;
-}
-
-
-
-
-/* About Section */
-
-#about-section {
-  display: flex;
-  flex-direction: column;
   gap: 16px;
-}
-
-.about-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
+  flex-basis: 50%;
 }
 
 /* Resume/CV Section */
 
 #my-resume-section {
-  display: flex;
+  display: ;
   flex-direction: column;
   gap: 16px;
 }
 
 .resume-container {
   display: flex;
-  gap: 34px 16 px;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between
 }
 
     /* Resume Cards */
 
-    .resume-card {
-      max-width: calc((100% - 32px) / 3);
+    .resume-grid {
       display: flex;
-      flex-direction: column;
-      gap: 34px;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
-
-    .resume-card-text-container {
-      flex-direction: column;
+    .resume-row {
       display: flex;
-      gap: 16px
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      width: 300px
+      margin-bottom: 2rem;
     }
 
     .resume-image {
       width: 100%;
       height: 200px;
       object-fit: cover;
-      object-position: center;
+      object-position: left;
     }
 
+    .resume-text {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resume-label {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
 
 
 
