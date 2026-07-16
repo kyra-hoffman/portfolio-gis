@@ -1,0 +1,104 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+      <link rel="icon" href="./assets/images/1311.png" />
+		<title>Kyra Hoffman's Portfolio</title>
+    <meta name="description" content="The GIS Portfolio of Kyra Hoffman">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Kyra Hoffman</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="kyra.l.hoffman@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Nitrate Removal in Beaver Ponds</div>
+        <image class="project-header-image" src="../assets/images/agu2025poster_compressed.jpg">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">I built on my thesis research in the summer after graduating with Dr. Deon Knights in the Vassar College Earth Science Department. As part of this research, I have developed a model to upscale nitrate removal with multiple beaver ponds on a stream system. A schematic network of the stream was created using data from the USGS National Hydrology Database (NHD). Nutrient flux was calculated using equation 4 and 5 based on stream segment length and estimated uptake velocity (Knights et al. 2023). The estimated uptake velocity was calculated from the average stream channel uptake rates.</div>
+          <div class="body-text">Q_j C_j=Q_i C_i×TE	(4)</div>
+          <div class="body-text">TE=e^(-k_(i )× (w_i l_i d_i)/Q_i   )	(5)</div>
+          <div class="body-text">Qj represents output discharge (L3). Cj represents output concentration (M/L3). Qi represents input discharge (L3). Ci represents input concentration (M/L3). ki is the nutrient uptake velocity (L/T). wi is the width of the stream channel. li is the length of the stream channel. di is the depth of the stream channel.</div>
+          <div class="body-text">To explore the addition of beaver dams, nodes were added to the network to represent dams which allowed for further nutrient removal. Beaver dams in the nutrient flux calculation were treated as lakes with static conditions and the potential removal was calculated using equation 6 and output concentration through equation 7 (Knights et al. 2023).</div>
+          <div class="body-text">R=A×C_i×V_f	(6)</div>
+          <div class="body-text">C_j=(((Q_i C_i )+R))/Q_i 	(7)</div>
+          <div class="body-text">Potential removal is represented by R (M/T), where A is area, Ci is input concentration, and Vf is nutrient uptake (L/T).</div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" href="mailto:kyra.l.hoffman@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
