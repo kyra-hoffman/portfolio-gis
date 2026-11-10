@@ -38,6 +38,14 @@ body {
   font-weight: 500;
 }
 
+.body-text + .body-text {
+  margin-top: 1rem;
+}
+
+.main-title + .body-text {
+  margin-top: 1rem;
+}
+
 .project-card-text {
   overflow: hidden;
   text-overflow: ellipsis;
