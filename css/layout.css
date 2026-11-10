@@ -199,6 +199,18 @@ body {
   gap: 34px;
 }
 
+.equation-image-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+}
+  
+.equation-image {
+  width: 25%;
+  height: 25%;
+}
+
     /* Project Gallery */
 
     #project-gallery {
