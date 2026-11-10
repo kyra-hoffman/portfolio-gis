@@ -15,8 +15,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  body.compass-cursor-enabled,
+  body.compass-cursor-enabled * {
+    cursor: none !important;
+  }
 
+  .compass-cursor {
+    position: fixed;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translate(-50%, -50%) rotate(var(--compass-angle, 0deg));
+    transform-origin: center;
+    transition: filter 120ms ease;
+  }
 
+  .compass-cursor.is-over-button {
+    filter: invert(1);
+  }
+}
 
 /* Main Page Layout */
 
@@ -55,6 +75,10 @@ body {
   flex-direction: column;
   gap: 16px;
   flex-basis: 50%;
+}
+
+#portfolio-header-text-container .header-text .body-text + .body-text {
+  margin-top: 1rem;
 }
 
 /* Resume/CV Section */
@@ -252,6 +276,3 @@ body {
     max-width: 100%;
   }
 }
-
-
-
